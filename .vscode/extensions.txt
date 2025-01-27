@@ -1,0 +1,6 @@
+GitLens-Git supercharged by GitKraken
+HTML CSS Support by ecmel
+Auto Close tag by Jun Han
+Auto Rename Tag by Jun Han
+Live Server by Ritwick Dey
+vscode-pdf by tomoki1207
