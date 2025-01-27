@@ -1,0 +1,16 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editorAssociations": {
+        "*.zip": "default"
+    },
+    "editor.formatOnSave": true,
+    "git.branchProtection": [
+        "main"
+    ],
+    "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
+    "git.confirmSync": false,
+    "workbench.startupEditor": "none",
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true
+}
