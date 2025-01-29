@@ -12,5 +12,6 @@
     "workbench.startupEditor": "none",
     "files.autoSave": "afterDelay",
     "editor.minimap.enabled": false,
-    "liveServer.settings.donotShowInfoMsg": true
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.enableSmartCommit": true
 }
