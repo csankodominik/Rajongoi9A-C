@@ -1,24 +1,42 @@
-.cimsor{
+@font-face {
+    font-family: 'Minecraft_magyar';
+    src: url('fonts/minecraft-font-regular-full-character-set.ttf');
+}
+
+.cimsor {
     font-size: large;
     font-weight: bold;
 }
-.minecraft_cimsor{
-    position: relative;
+
+.minecraft_cimsor {
+
     color: black;
     font-size: 100px;
     font-weight: bold;
-    
     font-family: 'Minecraft', sans-serif;
+    position: absolute;
+    margin: 0px;
+    top: 0;
+
 }
-.hatter{
-    position: relative;
+
+.hatter {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: url("minecraft_background.jpg") center cover no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
 }
-.hatter::before{
+
+.hatter::before {
     content: '';
     position: absolute;
     top: 0px;
@@ -27,6 +45,28 @@
     bottom: 0px;
     background-image: url(minecraft_background.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     opacity: 0.5;
+    background-attachment: fixed;
+}
+
+.szoveg {
+    margin-top: 150px;
+    padding: 50px;
+    font-size: 20px;
+    max-width: 800px;
+    text-align: justify;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.alcimsor {
+    font-family: 'Minecraft_magyar', sans-serif;
+    font-size: 50px;
 }
