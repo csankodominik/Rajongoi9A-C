@@ -2,9 +2,31 @@
     font-size: large;
     font-weight: bold;
 }
-.cimsor_kozep{
+.minecraft_cimsor{
+    position: relative;
+    color: black;
     font-size: 100px;
     font-weight: bold;
-    text-align: center;
+    
     font-family: 'Minecraft', sans-serif;
+}
+.hatter{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.hatter::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-image: url(minecraft_background.jpg);
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.5;
 }
