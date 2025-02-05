@@ -54,7 +54,7 @@
     margin-top: 150px;
     padding: 50px;
     font-size: 20px;
-    max-width: 800px;
+    
     text-align: justify;
     position: relative;
     z-index: 1;
@@ -69,4 +69,8 @@ body {
 .alcimsor {
     font-family: 'Minecraft_magyar', sans-serif;
     font-size: 50px;
+}
+.szoveg_stilus{
+    font-family: 'Minecraft_magyar', sans-serif;
+    
 }
