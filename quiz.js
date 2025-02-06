@@ -8,7 +8,7 @@ const quizData = [
       question: 'Mi a Minecraft kódolási nyelve?',
       options: [
         'C#',
-        'Java',
+        'JavaScript',
         'HTML',
         'Java',
       ],
