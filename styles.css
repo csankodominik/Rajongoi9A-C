@@ -74,3 +74,12 @@ body {
     font-family: 'Minecraft_magyar', sans-serif;
     
 }
+
+nav {
+backdrop-filter: blur(30px);
+-webkit-backdrop-filter: blur(3px);
+border-radius: 5px;
+box-shadow: 0 5px 30px 0 rgba(22, 32, 220, 0.37);
+padding-right: 35px;
+border: 1px solid rgba(255, 255, 255, 0.18);
+}
