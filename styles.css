@@ -14,7 +14,7 @@
     font-size: 100px;
     font-weight: bold;
     font-family: 'Minecraft', sans-serif;
-    position: absolute;
+    position: fixed;
     margin: 0px;
     top: 0;
     padding-top: 50px;
@@ -82,4 +82,7 @@ body {
     box-shadow: 0 5px 30px 0 rgba(22, 32, 220, 0.37);
     padding-right: 35px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#carousel{
+ margin: 300px;
 }
