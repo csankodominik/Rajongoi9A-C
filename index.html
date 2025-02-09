@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="minecraft_cimsor_animacio.js"></script>
     <title>Kezdőlap</title>
 </head>
 
 <body>
+  <!-- Navbar -->
    <nav class="navbar navbar-expand-lg bg-secondary fixed-top">
   
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,9 +37,46 @@
         </ul>
     </div>
 </nav>
+<!-- Minecraft felirat az oldal tetején -->
     <div class="hatter">
         <p class="minecraft_cimsor"><b>Minecraft</b></p>
     </div>
+    <!-- Carousel -->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Az alsó kicsi csíkok -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+      </div>
+    
+      <!-- Képek -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="mc_shader.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="nagy_epitmeny_1.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="dinosaurus_mod.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="nagy_epitmeny_2.jpg" class="d-block w-100">
+        </div>
+      </div>
+    
+      <!-- Balra, jobbra -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <!-- Szöveg -->
     <div class="szoveg">    
         <h1 class="alcimsor"><b>Története:</b></h1>
         <p class="szoveg_stilus">A minecraft egy nyílt világú, <i>sandbox</i> típusú játék, ahol a játékmenet sokszínűsége és hangulata szívja be a játékost.</p>
