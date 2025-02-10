@@ -69,10 +69,11 @@ body {
 .alcimsor {
     font-family: 'Minecraft_magyar', sans-serif;
     font-size: 50px;
+    font-weight: bold;
 }
 .szoveg_stilus{
     font-family: 'Minecraft_magyar', sans-serif;
-    
+
 }
 
 .navbar {
