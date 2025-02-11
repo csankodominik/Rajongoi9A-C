@@ -92,4 +92,14 @@ body {
     margin-top: 80px;
     text-align: center;
     font-size: 3em;
+    font-weight: bold;
+}
+.nevek {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.linkek {
+    text-align: center;
+    font-size: 20;
 }
