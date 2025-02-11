@@ -140,7 +140,7 @@ const quizData = [
     submitButton.style.display = 'none';
     retryButton.style.display = 'inline-block';
     showAnswerButton.style.display = 'inline-block';
-    resultContainer.innerHTML = `You scored ${score} out of ${quizData.length}!`;
+    resultContainer.innerHTML = ` ${score} pontszámot értél el a ${quizData.length}-ből!`;
   }
   
   function retryQuiz() {
@@ -165,16 +165,16 @@ const quizData = [
     for (let i = 0; i < incorrectAnswers.length; i++) {
       incorrectAnswersHtml += `
         <p>
-          <strong>Question:</strong> ${incorrectAnswers[i].question}<br>
-          <strong>Your Answer:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
-          <strong>Correct Answer:</strong> ${incorrectAnswers[i].correctAnswer}
+          <strong>Kérdés:</strong> ${incorrectAnswers[i].question}<br>
+          <strong>A te válaszod:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
+          <strong>Helyes Válasz:</strong> ${incorrectAnswers[i].correctAnswer}
         </p>
       `;
     }
   
     resultContainer.innerHTML = `
-      <p>You scored ${score} out of ${quizData.length}!</p>
-      <p>Incorrect Answers:</p>
+      <p> ${score} pontszámot értél el a ${quizData.length}-ből!</p>
+      <p>Helytelen válaszok:</p>
       ${incorrectAnswersHtml}
     `;
   }
