@@ -123,11 +123,11 @@ h1 {
 }
 
 .navbar .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1); 
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
 }
 
 .navbar .nav-link.active {
-  color: #f39c12; 
+  color: #f39c12;
   font-weight: bold;
 }
