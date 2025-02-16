@@ -79,45 +79,46 @@ body {
 
 .navbar {
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Safari támogatás */
-    background-color: rgba(44, 62, 80, 0.9); /* Sötétkék, 90% átlátszóság */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Erősebb árnyék */
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(44, 62, 80, 0.9); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     padding-right: 35px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.navbar .nav-link {
+  }
+  
+  .navbar .nav-link {
     position: relative;
     color: #fff;
     text-decoration: none;
     transition: background-color 0.3s ease;
-}
-
-.navbar .nav-link::after {
+  }
+  
+  .navbar .nav-link::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #f39c12; /* Narancssárga */
+    background-color: #f39c12;
     bottom: 0;
     left: 0;
     transition: width 0.3s ease;
-}
-
-.navbar .nav-link:hover::after {
+  }
+  
+  .navbar .nav-link:hover::after {
     width: 100%;
-}
-
-.navbar .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Világos háttér hover esetén */
+  }
+  
+  .navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
     border-radius: 5px;
-}
-
-.navbar .nav-link.active {
-    color: #f39c12; /* Narancssárga */
+  }
+  
+  .navbar .nav-link.active {
+    color: #f39c12; 
     font-weight: bold;
-}
+  }
+ 
 #carousel{
     max-width: 700px;
  margin: auto;
