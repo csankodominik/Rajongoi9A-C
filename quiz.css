@@ -35,23 +35,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #428bca;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  margin-right: 10px;
-}
-
-.button:hover {
-  background-color: #3071a9;
-}
-
 .result {
   text-align: center;
   margin-top: 20px;
@@ -131,4 +114,53 @@ h1 {
 .navbar .nav-link.active {
   color: #f39c12;
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .container {
+      width: 90%;
+      padding: 10px;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #428bca;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  margin-right: 10px;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #428bca;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+.button:hover {
+  background-color: #3071a9;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button.hide {
+  display: none;
 }
