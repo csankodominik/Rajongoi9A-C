@@ -81,7 +81,7 @@ body {
 .navbar {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background-color: rgba(44, 62, 80, 0.7); /* Átlátszóbb háttér */
+    background-color: rgba(44, 62, 80, 0.7);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     padding: 10px 20px;
@@ -99,13 +99,12 @@ body {
     position: relative;
   }
   
-  /* Linkek aláhúzása */
   .navbar .navbar-nav .nav-link::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #f39c12; /* Narancssárga aláhúzás */
+    background-color: #f39c12;
     bottom: 0;
     left: 0;
     transition: width 0.3s ease;
@@ -115,19 +114,17 @@ body {
     width: 100%;
   }
   
-  /* Aktív link stílusa */
+
   .navbar .navbar-nav .nav-link.active {
-    color: #f39c12; /* Narancssárga szín aktív linkhez */
+    color: #f39c12;
     font-weight: bold;
   }
-  
-  /* Gombok hover hatása */
+
   .navbar .navbar-nav .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Világos háttér hoverkor */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
   }
-  
-  /* Reszponzív design */
+
   @media (max-width: 768px) {
     .navbar .navbar-nav .nav-link {
       font-size: 18px;
@@ -135,19 +132,19 @@ body {
     }
   }
   .navbar-creeper {
-    height: 50px; /* A kép magassága */
-    width: auto; /* Szélesség automatikus, hogy arányos maradjon */
-    margin-left: 20px; /* Térköz a linkek és a kép között */
-    transition: transform 0.3s ease; /* Animáció hoverkor */
+    height: 50px;
+    width: auto;
+    margin-left: 20px;
+    transition: transform 0.3s ease;
   }
   
   .navbar-creeper:hover {
-    transform: scale(1.1); /* Kicsit nagyobbá válik hoverkor */
+    transform: scale(1.1);
   }
   @media (max-width: 768px) {
     .navbar-creeper {
-      height: 40px; /* Kisebb méret mobil eszközökön */
-      margin-left: 10px; /* Kisebb térköz */
+      height: 40px;
+      margin-left: 10px;
     }
   }
 

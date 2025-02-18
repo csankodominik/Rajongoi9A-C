@@ -3,14 +3,17 @@
     src: url('fonts/MinecraftFontRegularFullCharacterSet.ttf');
 }
 
-/* Alapstílusok */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url(rolunkhatter.jpg);
     background-color: #f4f4f9;
+    background-image: url("rolunkhatter.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-/* Minecraft stílusú címek */
 .minecraft_cimsor {
     color: black;
     font-size: 100px;
@@ -33,7 +36,6 @@ body {
     text-align: left;
 }
 
-/* Háttér stílus */
 .hatter {
     position: fixed;
     top: 0;
@@ -44,7 +46,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url("minecraft_background.png") center/cover no-repeat;
+    background: url("rolunkhatter.jpg") center/cover no-repeat;
     background-attachment: fixed;
     z-index: -1;
     overflow: hidden;
@@ -57,14 +59,13 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background-image: url(minecraft_background.jpg);
+    background-image: url(rolunkhatter.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.5;
     background-attachment: fixed;
 }
 
-/* Szöveg stílus */
 .szoveg {
     margin-top: 150px;
     padding: 50px;
@@ -78,7 +79,7 @@ body {
 .navbar {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background-color: rgba(44, 62, 80, 0.7); /* Átlátszóbb háttér */
+    background-color: rgba(44, 62, 80, 0.7);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     padding: 10px 20px;
@@ -96,14 +97,12 @@ body {
     position: relative;
   }
 
-  
-  /* Linkek aláhúzása */
   .navbar .navbar-nav .nav-link::after {
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #f39c12; /* Narancssárga aláhúzás */
+    background-color: #f39c12;
     bottom: 0;
     left: 0;
     transition: width 0.3s ease;
@@ -113,19 +112,16 @@ body {
     width: 100%;
   }
   
-  /* Aktív link stílusa */
   .navbar .navbar-nav .nav-link.active {
-    color: #f39c12; /* Narancssárga szín aktív linkhez */
+    color: #f39c12;
     font-weight: bold;
   }
   
-  /* Gombok hover hatása */
   .navbar .navbar-nav .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Világos háttér hoverkor */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
   }
   
-  /* Reszponzív design */
   @media (max-width: 768px) {
     .navbar .navbar-nav .nav-link {
       font-size: 18px;
@@ -133,22 +129,21 @@ body {
     }
   }
   .navbar-creeper {
-    height: 50px; /* A kép magassága */
-    width: auto; /* Szélesség automatikus, hogy arányos maradjon */
-    margin-right: 20px; /* Térköz a kép és a "Főoldal" link között */
-    transition: transform 0.3s ease; /* Animáció hoverkor */
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
   }
   
   .navbar-creeper:hover {
-    transform: scale(1.1); /* Kicsit nagyobbá válik hoverkor */
+    transform: scale(1.1);
   }
   @media (max-width: 768px) {
     .navbar-creeper {
-      height: 40px; /* Kisebb méret mobil eszközökön */
-      margin-right: 10px; /* Kisebb térköz */
+      height: 40px;
+      margin-right: 10px;
     }
   }
-/* Kártyák stílusa */
 .card {
     background-color: #fff;
     border-radius: 10px;
@@ -180,7 +175,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* Közösségi média ikonok */
 .social-links {
     display: flex;
     justify-content: center;
@@ -198,7 +192,6 @@ body {
     transform: scale(1.2);
 }
 
-/* Reszponzív design */
 @media (max-width: 768px) {
     .card {
         margin-bottom: 20px;
@@ -222,22 +215,25 @@ body {
     }
 }
 
-/* Főcím stílus */
 .focim {
     margin-top: 80px;
+    color: white;
     text-align: center;
     font-size: 3em;
     font-weight: bold;
+    margin-top: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block; 
 }
 
-/* Név stílus */
 .nevek {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
 }
 
-/* Link stílus */
 .linkek {
     text-align: center;
     font-size: 20px;

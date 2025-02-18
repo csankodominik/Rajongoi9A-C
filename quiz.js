@@ -116,7 +116,7 @@ function displayQuestion() {
   quizContainer.appendChild(questionElement);
   quizContainer.appendChild(optionsElement);
 
-  updateProgressBar(); // Progress bar frissítése
+  updateProgressBar();
 }
 
 function checkAnswer() {
@@ -128,14 +128,14 @@ function checkAnswer() {
       options.forEach(option => {
           const radio = option.querySelector('input[type="radio"]');
           if (radio.value === quizData[currentQuestion].answer) {
-              option.style.backgroundColor = '#4CAF50'; // Helyes válasz: zöld
-              option.style.color = '#fff'; // Fehér szöveg
+              option.style.backgroundColor = '#4CAF50';
+              option.style.color = '#fff';
           } else if (answer !== quizData[currentQuestion].answer) {
-              option.style.backgroundColor = '#f44336'; // Minden más opció piros, ha a válasz helytelen
-              option.style.color = '#fff'; // Fehér szöveg
+              option.style.backgroundColor = '#f44336';
+              option.style.color = '#fff';
           } else {
-              option.style.backgroundColor = '#f9f9f9'; // Semleges háttér
-              option.style.color = '#000'; // Alap szöveg szín
+              option.style.backgroundColor = '#f9f9f9';
+              option.style.color = '#000';
           }
       });
 
@@ -156,24 +156,10 @@ function checkAnswer() {
           } else {
               displayResult();
           }
-      }, 1000); // 1 másodperc késleltetés, hogy látszódjon a színezés
+      }, 1000);
   }
 }
 
-function displayResult() {
-  quizContainer.style.display = 'none';
-  submitButton.style.display = 'none';
-  retryButton.style.display = 'inline-block';
-  showAnswerButton.style.display = 'inline-block';
-  resultContainer.innerHTML = ` ${score} pontszámot értél el a ${quizData.length}-ből!`;
-
-  // Confetti effektus hozzáadása
-  confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-  });
-}
 
 function retryQuiz() {
   currentQuestion = 0;
@@ -184,7 +170,7 @@ function retryQuiz() {
   retryButton.style.display = 'none';
   showAnswerButton.style.display = 'none';
   resultContainer.innerHTML = '';
-  displayQuestion(); // Első kérdés újratöltése
+  displayQuestion();
 }
 
 function showAnswer() {
@@ -218,7 +204,6 @@ function displayResult() {
   showAnswerButton.style.display = 'inline-block';
   resultContainer.innerHTML = ` ${score} pontszámot értél el a ${quizData.length}-ből!`;
 
-  // Confetti effektus hozzáadása
   confetti({
       particleCount: 100,
       spread: 70,
@@ -235,4 +220,4 @@ submitButton.addEventListener('click', checkAnswer);
 retryButton.addEventListener('click', retryQuiz);
 showAnswerButton.addEventListener('click', showAnswer);
 
-displayQuestion(); // Első kérdés betöltése
+displayQuestion(); 
