@@ -211,6 +211,21 @@ function showAnswer() {
   `;
 }
 
+function displayResult() {
+  quizContainer.style.display = 'none';
+  submitButton.style.display = 'none';
+  retryButton.style.display = 'inline-block';
+  showAnswerButton.style.display = 'inline-block';
+  resultContainer.innerHTML = ` ${score} pontszámot értél el a ${quizData.length}-ből!`;
+
+  // Confetti effektus hozzáadása
+  confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 },
+  });
+}
+
 submitButton.addEventListener('click', checkAnswer);
 retryButton.addEventListener('click', retryQuiz);
 showAnswerButton.addEventListener('click', showAnswer);
