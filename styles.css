@@ -134,6 +134,23 @@ body {
       padding: 8px 12px;
     }
   }
+  .navbar-creeper {
+    height: 50px; /* A kép magassága */
+    width: auto; /* Szélesség automatikus, hogy arányos maradjon */
+    margin-left: 20px; /* Térköz a linkek és a kép között */
+    transition: transform 0.3s ease; /* Animáció hoverkor */
+  }
+  
+  .navbar-creeper:hover {
+    transform: scale(1.1); /* Kicsit nagyobbá válik hoverkor */
+  }
+  @media (max-width: 768px) {
+    .navbar-creeper {
+      height: 40px; /* Kisebb méret mobil eszközökön */
+      margin-left: 10px; /* Kisebb térköz */
+    }
+  }
+
 #carousel{
     max-width: 700px;
  margin: auto;
