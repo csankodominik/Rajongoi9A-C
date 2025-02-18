@@ -226,6 +226,11 @@ function displayResult() {
   });
 }
 
+function updateProgressBar() {
+  const progress = ((currentQuestion + 1) / quizData.length) * 100;
+  document.querySelector('.progress').style.width = `${progress}%`;
+}
+
 submitButton.addEventListener('click', checkAnswer);
 retryButton.addEventListener('click', retryQuiz);
 showAnswerButton.addEventListener('click', showAnswer);
