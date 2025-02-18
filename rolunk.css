@@ -126,6 +126,12 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     margin-bottom: 20px;
+    width: 350px; /* Szélesség növelve */
+    height: 450px; /* Magasság növelve */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card:hover {
@@ -134,33 +140,33 @@ body {
 }
 
 .card img {
-    width: 150px;
-    height: 150px;
+    width: 180px; /* Kép mérete növelve */
+    height: 180px; /* Kép mérete növelve */
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .card h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
+    font-size: 1.75em; /* Cím mérete növelve */
+    margin: 15px 0;
 }
 
 .card p {
-    font-size: 1em;
+    font-size: 1.1em; /* Szöveg mérete növelve */
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 /* Közösségi média ikonok */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px; /* Távolság növelve */
 }
 
 .social-links a {
     color: #333;
-    font-size: 1.5em;
+    font-size: 1.75em; /* Ikonok mérete növelve */
     transition: color 0.3s, transform 0.3s;
 }
 
@@ -172,24 +178,25 @@ body {
 /* Reszponzív design */
 @media (max-width: 768px) {
     .card {
-        margin-bottom: 20px;
+        width: 300px; /* Kisebb képernyőkön kicsit kisebb kártya */
+        height: 400px; /* Kisebb képernyőkön kicsit kisebb kártya */
     }
 
     .card img {
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
     }
 
     .card h3 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .card p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .social-links a {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 }
 
