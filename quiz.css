@@ -9,7 +9,7 @@ body {
 
 .container {
   width: 450px;
-  padding: 20px; /* Minden oldalon egyenletes padding */
+  padding: 20px;
   margin-top: 120px;
   background-color: rgba(40, 35, 30, 0.8);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -17,8 +17,8 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #e0e0e0;
   margin-bottom: 20px;
-  max-height: 80vh; /* Maximális magasság a képernyő 80%-ára */
-  overflow-y: auto; /* Görgetés, ha a tartalom nem fér el */
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 h1 {
@@ -28,18 +28,18 @@ h1 {
 .question {
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 15px; /* Kisebb margó */
+  margin-bottom: 15px;
   text-shadow: 2px 2px 0 #000;
 }
 
 .options {
-  margin-bottom: 15px; /* Kisebb margó */
+  margin-bottom: 15px;
 }
 
 .option {
   display: block;
-  margin-bottom: 8px; /* Kisebb margó */
-  padding: 8px; /* Kisebb padding */
+  margin-bottom: 8px;
+  padding: 8px;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
@@ -48,9 +48,9 @@ h1 {
 }
 
 .option:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Világosabb háttér hoverkor */
-  transform: translateY(-2px); /* Gomb feljebb mozog hoverkor */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Árnyék hozzáadása */
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .option input[type="radio"] {
@@ -62,7 +62,7 @@ h1 {
   margin-top: 20px;
   font-weight: bold;
   font-size: 18px;
-  color: #ffa500; /* Narancssárga szöveg */
+  color: #ffa500;
 }
 
 .option:active {
@@ -104,31 +104,30 @@ h1 {
 .navbar {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  background-color: rgba(40, 35, 30, 0.8); /* Sötét sárgás-szürkés-feketés háttér */
+  background-color: rgba(40, 35, 30, 0.8);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 10px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Világos keret a kontrasztért */
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar .navbar-nav .nav-link {
   color: #e0e0e0;
   font-size: 28px;
   font-weight: 600;
-  text-shadow: 2px 2px 0 #000; /* Pixeles árnyék hatás */
+  text-shadow: 2px 2px 0 #000;
   padding: 12px 18px;
   margin: 0 8px;
   transition: all 0.3s ease;
   position: relative;
 }
 
-/* Linkek aláhúzása */
 .navbar .navbar-nav .nav-link::after {
   content: '';
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #ffa500; /* Narancssárga aláhúzás */
+  background-color: #ffa500;
   bottom: 0;
   left: 0;
   transition: width 0.3s ease;
@@ -138,15 +137,13 @@ h1 {
   width: 100%;
 }
 
-/* Aktív link stílusa */
 .navbar .navbar-nav .nav-link.active {
-  color: #ffa500; /* Narancssárga szín aktív linkhez */
+  color: #ffa500;
   font-weight: bold;
 }
 
-/* Gombok hover hatása */
 .navbar .navbar-nav .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Világos háttér hoverkor */
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
 }
 
@@ -166,46 +163,46 @@ h1 {
   }
 }
 .navbar-creeper {
-  height: 50px; /* A kép magassága */
-  width: auto; /* Szélesség automatikus, hogy arányos maradjon */
-  margin-right: 20px; /* Térköz a kép és a "Főoldal" link között */
-  transition: transform 0.3s ease; /* Animáció hoverkor */
+  height: 50px;
+  width: auto;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
 }
 
 .navbar-creeper:hover {
-  transform: scale(1.1); /* Kicsit nagyobbá válik hoverkor */
+  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .navbar-creeper {
-    height: 40px; /* Kisebb méret mobil eszközökön */
-    margin-right: 10px; /* Kisebb térköz */
+    height: 40px;
+    margin-right: 10px;
   }
 }
 
 .button {
   display: inline-block;
-  padding: 8px 16px; /* Kisebb padding */
+  padding: 8px 16px;
   background-color: rgba(255, 165, 0, 0.8);
   color: #fff;
   border: none;
   cursor: pointer;
-  font-size: 14px; /* Kisebb betűméret */
+  font-size: 14px;
   border-radius: 25px;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  margin-right: 8px; /* Kisebb margó */
-  margin-bottom: 8px; /* Kisebb margó */
+  margin-right: 8px;
+  margin-bottom: 8px;
   outline: none;
 }
 
 .button:hover {
-  background-color: rgba(255, 165, 0, 1); /* Sötétebb narancssárga hoverkor */
-  transform: translateY(-3px); /* Gomb feljebb mozog hoverkor */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Árnyék hozzáadása */
+  background-color: rgba(255, 165, 0, 1);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .button:active {
-  transform: translateY(0); /* Gomb visszaáll kattintáskor */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Kisebb árnyék */
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .button.hide {
@@ -240,14 +237,14 @@ h1 {
 
 .progress-container {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.1); /* Világos háttér */
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   margin-bottom: 20px;
 }
 
 .progress {
   height: 10px;
-  background-color: #ffa500; /* Narancssárga progress bar */
+  background-color: #ffa500;
   border-radius: 5px;
   transition: width 0.3s ease;
 }
