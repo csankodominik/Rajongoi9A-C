@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url("minecraft_background.png") center/cover no-repeat;
+    background: url("kepek/minecraft_background.png") center/cover no-repeat;
     background-attachment: fixed;
     z-index: -1;
     overflow: hidden;
@@ -42,7 +42,7 @@
     right: 0px;
     left: 0px;
     bottom: 0px;
-    background-image: url(minecraft_background.jpg);
+    background-image: url(kepek/minecraft_background.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.8;

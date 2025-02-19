@@ -6,9 +6,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url(rolunkhatter.jpg);
+    background-image: url(kepek/rolunkhatter.jpg);
     background-color: #f4f4f9;
-    background-image: url("rolunkhatter.jpg");
+    background-image: url("kepek/rolunkhatter.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -46,7 +46,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url("rolunkhatter.jpg") center/cover no-repeat;
+    background: url("kepek/rolunkhatter.jpg") center/cover no-repeat;
     background-attachment: fixed;
     z-index: -1;
     overflow: hidden;
@@ -59,7 +59,7 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-    background-image: url(rolunkhatter.jpg);
+    background-image: url(kepek/rolunkhatter.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.5;
